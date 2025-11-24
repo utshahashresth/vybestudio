@@ -35,12 +35,14 @@ const Header = () => {
               </NavigationMenu>
               <div className="flex gap-7 ml-200 ">
                 <NavigationMenu>
-                  <Link href="/Cart">
+                  <Link href="/cart">
                     <ShoppingCartIcon />
                   </Link>
                 </NavigationMenu>
                 <NavigationMenu>
-                  <UserIcon />
+                  <Link href="/User">
+                    <UserIcon />
+                  </Link>
                 </NavigationMenu>
               </div>
 
