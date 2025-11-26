@@ -33,7 +33,7 @@ const page = () => {
           </CardContent>
           <CardFooter>
             Dont have a account?
-            <Link href="/contact">Signin</Link>
+            <Link href="/signup">Sign in</Link>
           </CardFooter>
         </Card>
       </div>

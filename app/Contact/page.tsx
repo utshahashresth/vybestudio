@@ -1,42 +1,39 @@
 import React from "react";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-const page = () => {
+import Header from "@/components/Header";
+
+export default async function Page() {
+  const res = await fetch("https://fakestoreapi.com/products");
+  const products = await res.json();
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
-      <Card className="w-full max-w-md p-6 shadow-lg">
-        <CardHeader>
-          <CardTitle>Sign Up</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex flex-col gap-4">
-            <Label>Full Name</Label>
-            <Input type="text" placeholder="John Doe" />
-            <Label>Email</Label>
-            <Input type="email" placeholder="john@example.com" />
-            <Label>Password</Label>
-            <Input type="password" />
-            <Button>Submit</Button>
-          </div>
-        </CardContent>
-        <CardFooter>
-          Already have a account?
-          <Link href="/login">Login</Link>
-        </CardFooter>
-      </Card>
+    <div className="min-h-screen">
+      <Header />
+      <div className="font-semibold text-5xl mt-4 ml-5 text-black ">
+        Contact Us
+      </div>
+      <div className="bg-black mt-70 w-full h-[280px]  justify-between text-white">
+        <div className="ml-5">
+          <p className="mt-5 text-2xl font-medium">Our address</p>
+          <p className="mt-4">Kathmandu,Nepal</p>
+          <p className="">Building Office 4490</p>
+        </div>
+        <div className="justify-center mb-0 mt-5 ml-5 ">
+          <p className=" text-2xl font-medium">Our contact</p>
+          <p>vybe@gmail.com</p>
+          <p>985476947694</p>
+        </div>
+      </div>
+
+      <div className="p-8">
+        <h2 className="text-2xl font-bold mb-4">Fetched Products</h2>
+        <div>
+          {products.map((product: any) => (
+            <p key={product.id}>
+              {product.title} — Rs. {product.price}
+            </p>
+          ))}
+        </div>
+      </div>
     </div>
   );
-};
-
-export default page;
+}

@@ -64,66 +64,30 @@ const page = () => {
       image: "/hoodies.jpg",
       inStock: true,
     },
-    {
-      id: 7,
-      name: "Zip-Up Hoodie",
-      category: "hoodie",
-      price: 2199,
-      sizes: ["S", "M", "L"],
-      colors: ["dark-green", "black"],
-      image: "//hoodies.jpg",
-      inStock: false,
-    },
-    {
-      id: 8,
-      name: "Premium Heavyweight Hoodie",
-      category: "hoodie",
-      price: 2799,
-      sizes: ["M", "L", "XL", "XXL"],
-      colors: ["charcoal", "navy"],
-      image: "/hoodies.jpg",
-      inStock: true,
-    },
-    {
-      id: 9,
-      name: "Minimalist Logo T-Shirt",
-      category: "tshirt",
-      price: 1199,
-      sizes: ["S", "M", "L"],
-      colors: ["cream", "black"],
-      image: "/hoodies.jpg",
-      inStock: true,
-    },
-    {
-      id: 10,
-      name: "Vintage Wash T-Shirt",
-      category: "tshirt",
-      price: 1399,
-      sizes: ["M", "L"],
-      colors: ["olive", "gray"],
-      image: "/hoodies.jpg",
-      inStock: true,
-    },
   ];
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen min-w-screen">
       <Header />
-      <div className="ml-8 mt-5 font-semibold">
-        <p className="text-white font-bold text-3xl mb-8">Our Collection</p>
+      <div className="ml-3 mt-5 font-semibold">
+        <p className="text-white font-bold text-3xl mb-2">Our Collection</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {products.map((product) => (
-            <div key={product.id} className="text-white   p-4 ">
+            <div key={product.id} className="text-white   p-4 mr-0">
               <Image
-                src="/product.hoodies.jpg"
+                src={product.image}
                 alt="img"
-                height={40}
-                width={40}
+                height={100}
+                width={300}
+                className="gap-2 ml-2 mb-1"
               ></Image>
-              <div className="text-xl font-semibold">{product.name}</div>
-              <div className="text-sm text-gray-400">{product.category}</div>
-              <div className="text-lg mt-1">Rs. {product.price}</div>
+              <div className=" font-">{product.name}</div>
+
+              <div className=" ">Rs. {product.price}</div>
             </div>
           ))}
+          <div className="text-white text-6xl font-bold ml-20 mt-30 ">
+            Vybestudio
+          </div>
         </div>
       </div>
     </div>

@@ -18,12 +18,13 @@ const page = () => {
       <Header />
       <div>
         <div
-          className="h-[400px] w-[600px] bg-cover  mx-auto flex justify-center items-center mt-15"
+          className="h-[400px] w-[600px] bg-cover  mx-auto flex justify-center items-center mt-15  "
           style={{
             backgroundImage: "url('example.jpg')",
+            opacity: 20,
           }}
         >
-          <p className=" absolute inset-0 flex items-center justify-center text-black text-9xl font-bold z-10 mt-87">
+          <p className=" absolute inset-0 flex items-center justify-center text-black text-9xl font-bold -z-10 mt-96">
             Vybestudio
           </p>
           <div>
@@ -90,7 +91,7 @@ const page = () => {
             />
           </div>
           <div className="font-bold text-3xl mt-20">Basic Collection</div>
-          <div className=" grid  md:grid-cols-3 gap-2 ">
+          <div className=" grid  md:grid-cols-3 gap-2 mt-4">
             <Image
               src="/hoodies.jpg"
               alt="tshirt"
