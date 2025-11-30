@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
+import DecryptedText from "@/components/ui/shadcn-io/decrypted-text";
+
 import {
   Select,
   SelectContent,
@@ -29,9 +32,19 @@ const page = () => {
           </p>
           <div>
             <div className="absolute justify-center top-5">
-              <p className="font-bold text-black text-center text-50px">
-                Vybestudio
-              </p>
+              <Link href="/">
+                {" "}
+                <DecryptedText
+                  text="Vybestudio"
+                  infinite
+                  speed={60}
+                  maxIterations={15}
+                  sequential={false}
+                  className="font-bold text-black text-center text-50px mt-2"
+                  encryptedClassName="text-2xl font-bold text-muted-foreground"
+                  animateOn="view"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -59,7 +72,7 @@ const page = () => {
         <div className="flex-col  ">
           <div className="flex gap-3 mt-6  ">
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
@@ -67,7 +80,7 @@ const page = () => {
             />
 
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
@@ -75,14 +88,14 @@ const page = () => {
               className=""
             ></Image>
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
               objectFit="cover"
             />
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
@@ -93,35 +106,35 @@ const page = () => {
           <div className="font-bold text-3xl mt-20">Basic Collection</div>
           <div className=" grid  md:grid-cols-3 gap-2 mt-4">
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
               objectFit="cover"
             />
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
               objectFit="cover"
             />
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
               objectFit="cover"
             />
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}
               objectFit="cover"
             />
             <Image
-              src="/hoodies.jpg"
+              src="/tees.jpg"
               alt="tshirt"
               width={300}
               height={100}

@@ -29,7 +29,7 @@ export default async function Page() {
         <div>
           {products.map((product: any) => (
             <p key={product.id}>
-              {product.title} — Rs. {product.price}
+              {product.title}, Rs. {product.price}
             </p>
           ))}
         </div>

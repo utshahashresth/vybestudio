@@ -11,7 +11,7 @@ const page = () => {
       price: 899,
       sizes: ["S", "M", "L", "XL"],
       colors: ["black", "white"],
-      image: "/hoodies.jpg",
+      image: "/tees.jpg",
       inStock: true,
     },
     {
@@ -21,7 +21,7 @@ const page = () => {
       price: 1299,
       sizes: ["M", "L", "XL"],
       colors: ["gray", "navy"],
-      image: "/hoodies.jpg",
+      image: "/tees.jpg",
       inStock: true,
     },
     {
@@ -31,7 +31,7 @@ const page = () => {
       price: 999,
       sizes: ["S", "M", "L"],
       colors: ["white"],
-      image: "/hoodies.jpg",
+      image: "/tees.jpg",
       inStock: false,
     },
     {
@@ -41,7 +41,7 @@ const page = () => {
       price: 1499,
       sizes: ["S", "M", "L", "XL"],
       colors: ["blue", "black"],
-      image: "/hoodies.jpg",
+      image: "/tees.jpg",
       inStock: true,
     },
     {
@@ -51,7 +51,7 @@ const page = () => {
       price: 1999,
       sizes: ["M", "L", "XL"],
       colors: ["black"],
-      image: "/hoodies.jpg",
+      image: "/tees.jpg",
       inStock: true,
     },
     {
@@ -61,7 +61,7 @@ const page = () => {
       price: 2499,
       sizes: ["L", "XL"],
       colors: ["brown", "beige"],
-      image: "/hoodies.jpg",
+      image: "/tees.jpg",
       inStock: true,
     },
   ];

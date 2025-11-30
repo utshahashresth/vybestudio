@@ -19,7 +19,6 @@ import Header from "./Header";
 export function SignupForm({ ...props }: React.ComponentProps<typeof Card>) {
   return (
     <div className="">
-      <Header />
       <Card {...props}>
         <CardHeader>
           <CardTitle>Create an account</CardTitle>

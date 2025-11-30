@@ -1,5 +1,6 @@
 import React from "react";
 import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 
 const Footer = () => {
   return (
@@ -14,6 +15,7 @@ const Footer = () => {
             className="text-white border-none w-60 ml-8 mt-5"
             placeholder="Email"
           />
+          <Button className="ml-2">Submit</Button>
         </div>
         <div className="flex justify-center mb-0 mt-5">
           <p className="  text-white  w-40">
